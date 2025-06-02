@@ -9,9 +9,9 @@ def main():
     parser = argparse.ArgumentParser(description="Hydra-like tool for password cracking")
     parser.add_argument('-u', '--username', required=True, help="Username for SSH login")
     parser.add_argument('-s','--server', required=True, help="Server IP or DNS name")
-    parser.add_argument('-w','--wordlist', help="Path to wordlist file (optional)")
+    parser.add_argument('-w','--wordlist', help="Path to the wordlist file for dictionary attack (optianl)")
     parser.add_argument('--min', type=int, default=1, help="Minimum length of the password (for brute force)")
-    parser.add_argument('--max', type=int, default=20, help="Maximum length of the password (for brute force)")
+    parser.add_argument('--max', type=int, default=4, help="Maximum length of the password (for brute force)")
     parser.add_argument('-c', '--chartset', default='abcdefghijklmnopqrstuvwxyz', help="Chartset for brute force")
     args = parser.parse_args()
 
