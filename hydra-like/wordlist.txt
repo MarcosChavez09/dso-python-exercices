@@ -1,0 +1,7 @@
+123456
+password
+letmein
+qwerty
+mysecret
+superSecretPass
+abc
